@@ -59,11 +59,18 @@
 
     &__link {
         width: 100%;
+        position: relative;
         display: inline-block;
         color: $color-text-medium;
         text-transform: uppercase;
         font-weight: 300;
         text-decoration: none;
+
+        span {
+            color: $color-text-light;
+            // width: 100%;
+            position: absolute;
+        }
 
         &:hover {
             transform: translateY(-1.5rem), scale(1);
@@ -71,6 +78,17 @@
             transition: .3s;
             color: $color-text-light;
             background-color: $color-primary-light;
+
+            span {
+                font-weight: bold;
+                animation: arrowRight .5s;
+                left: 18rem;
+                // transition: all 1s;
+
+                // &::after {
+                //     animation: arrowLeft .5s;
+                // }
+            }
         }
     }
 }
