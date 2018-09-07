@@ -18,10 +18,10 @@ app.use((req, res, next) => {
   });
 });
 
-app.use(express.static(__dirname + '/playground'));
+// app.use(express.static(__dirname + '/playground'));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/playground/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
