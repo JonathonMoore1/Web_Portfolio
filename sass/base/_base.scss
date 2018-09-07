@@ -9,5 +9,18 @@
 
 body {
     box-sizing: border-box;
+    background-color: $color-primary-light;
+}
+
+main {
+    padding-left: 25%;
+    width: 100vw;
+}
+
+.content {
+    margin: 2rem;
+    padding: 2rem;
+    height: 100vh;
     background-color: $color-primary-dark;
+    border-left: 2px solid $color-text-green;
 }
