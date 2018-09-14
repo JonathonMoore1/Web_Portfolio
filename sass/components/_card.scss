@@ -3,25 +3,44 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 60rem;
+  height: 20rem;
 
   &__side {
-    height: 60rem;
+    height: 100%;
+    width: 100%;
+    transition: all .8s;
     position: absolute;
     top: 0;
     bottom: 0;
     overflow: hidden;
     backface-visibility: hidden;
+    border-radius: 3px;
 
     &--front {
 
       // FOR TESTING
-      background-color: yellowgreen;
+      // padding: 0;
+      background-color: url(img/trillo.png);
+      bacground-size: cover;
     }
 
     &--back {
+      transform: rotateY(-180deg);
       // FOR TESTING
       background-color: orangered;
     }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
   }
 }
