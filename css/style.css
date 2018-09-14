@@ -47,6 +47,23 @@ main {
   background-color: #1d1c1c;
   border-left: 2px solid #91d191; }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 60rem; }
+  .card__side {
+    height: 60rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: yellowgreen; }
+    .card__side--back {
+      background-color: orangered; }
+
 .sidebar {
   position: fixed;
   height: 100%;
@@ -154,3 +171,10 @@ body {
   letter-spacing: .15rem;
   line-height: 2.84rem;
   color: #c0c0c0; }
+
+.section__portfolio-grid {
+  color: #eee;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem; }

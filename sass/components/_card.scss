@@ -1,0 +1,27 @@
+.card {
+
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 60rem;
+
+  &__side {
+    height: 60rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &--front {
+
+      // FOR TESTING
+      background-color: yellowgreen;
+    }
+
+    &--back {
+      // FOR TESTING
+      background-color: orangered;
+    }
+  }
+}
