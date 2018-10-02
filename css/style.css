@@ -1,30 +1,3 @@
-.u-margin-bottom-large {
-  margin-bottom: 8rem; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 5rem; }
-
-.u-margin-bottom-small {
-  margin-bottom: 2rem; }
-
-.u-text-center {
-  text-align: center; }
-
-.u-text-left {
-  text-align: left; }
-
-@keyframes arrowRight {
-  0% {
-    left: 5rem; }
-  100% {
-    left: 18rem; } }
-
-@keyframes arrowLeft {
-  0% {
-    left: 18rem; }
-  100% {
-    left: 5rem; } }
-
 *,
 *::after,
 *::before {
@@ -33,162 +6,37 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box;
-  background-color: #524d4d; }
+  box-sizing: border-box; }
 
 main {
   padding-left: 25%;
   width: 100vw; }
 
-.content {
-  margin: 2rem;
-  padding: 2rem;
-  height: auto;
-  background-color: #1d1c1c;
-  border-left: 2px solid #91d191; }
-
-.card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-  height: 20rem; }
-  .card__side {
-    height: 100%;
-    width: 100%;
-    transition: all .8s;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    backface-visibility: hidden;
-    border-radius: 3px; }
-    .card__side--front {
-      background-color: url(img/trillo.png);
-      bacground-size: cover; }
-    .card__side--back {
-      transform: rotateY(-180deg);
-      background-color: orangered; }
-  .card:hover .card__side--front {
-    transform: rotateY(180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
-  .card__img {
-    height: 100%;
-    width: 100%; }
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(3, min-content);
+  grid-template-columns: repeat(4, 1fr); }
 
 .sidebar {
-  position: fixed;
-  height: 100%;
-  width: 25%;
-  padding: 2rem;
-  top: 0;
-  left: 0;
-  background-color: #2e2b2b;
-  z-index: 1000;
-  overflow: scroll; }
-  .sidebar__inner {
-    height: 100%;
-    padding: 2rem 5rem; }
+  color: #eee;
+  background-color: #3CC47C; }
 
-.personal-heading {
-  position: relative;
-  margin-bottom: 1rem;
-  height: auto;
-  display: block;
-  cursor: pointer; }
-  .personal-heading__img-box {
-    display: block;
-    text-align: center; }
-  .personal-heading__img {
-    height: 152px;
-    width: 152px;
-    border-radius: 50%; }
-  .personal-heading__text-box {
-    display: block;
-    text-align: center; }
+.sidebar {
+  color: #eee;
+  background-color: #3CC47C; }
 
-.navigation__nav {
-  position: relative;
-  display: block;
-  padding: 1rem; }
+.section-about {
+  color: #eee;
+  background-color: #828081; }
 
-.navigation__list {
-  list-style: none;
-  text-align: left; }
+.section-projects {
+  color: #eee;
+  background-color: #1E392A; }
 
-.navigation__item {
-  margin: 1rem;
-  width: 100%; }
+.section-bio {
+  color: #eee;
+  background-color: orangered; }
 
-.navigation__link {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  color: #c0c0c0;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-decoration: none; }
-  .navigation__link span {
-    color: #eee;
-    position: absolute; }
-  .navigation__link:hover {
-    transform: translateY(-1.5rem), scale(1);
-    -webkit-transition: .3s;
-    transition: .3s;
-    color: #eee;
-    background-color: #524d4d; }
-    .navigation__link:hover span {
-      font-weight: bold;
-      animation: arrowRight .5s;
-      left: 18rem; }
-
-body {
-  font-size: 16px;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  line-height: 1.7; }
-
-.heading-primary {
-  text-transform: uppercase;
-  color: #c0c0c0; }
-  .heading-primary--main {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: .4rem; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: .15rem; }
-
-.heading-secondary {
-  text-transform: uppercase;
-  color: #bb5f3e;
-  font-weight: 300;
-  font-size: 2.5rem;
-  letter-spacing: 1rem;
-  border-bottom: 1px solid #524d4d; }
-
-.heading-tertiary {
-  text-transform: lowercase;
-  font-weight: 300;
-  font-size: 1.5rem;
-  letter-spacing: .18rem;
-  color: #f7f5a7; }
-
-.paragraph {
-  padding: 2rem 3rem;
-  font-weight: 300;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  line-height: 2.84rem;
-  color: #c0c0c0; }
-
-.section__portfolio {
-  height: auto; }
-  .section__portfolio-grid {
-    color: #eee;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem; }
+.section-contact {
+  color: #eee;
+  background-color: #e9c893; }

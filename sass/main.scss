@@ -1,16 +1,11 @@
-// ABSTRACTS
-@import "abstracts/utilities";
-@import "abstracts/variables";
+@import "utilities";
+@import "variables";
 
-// BASE
-@import "base/animations";
-@import "base/base";
+@import "animations";
+@import "base";
 
-// COMPONENTS
-@import "components/card";
-// LAYOUT
-@import "layout/sidebar";
-@import "layout/typography";
+@import "sidebar";
+@import "typography";
 
-// PAGES
-@import "pages/home";
+@import "home";
+@import "layout";
