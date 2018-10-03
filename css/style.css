@@ -8,35 +8,38 @@
 body {
   box-sizing: border-box; }
 
-main {
-  padding-left: 25%;
-  width: 100vw; }
-
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(3, min-content);
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 14rem)) [section-end] 1fr [full-end]; }
 
 .sidebar {
   color: #eee;
-  background-color: #3CC47C; }
-
-.sidebar {
-  color: #eee;
-  background-color: #3CC47C; }
+  background-color: #3CC47C;
+  grid-row: 1 / -1;
+  grid-column: sidebar-start / sidebar-end; }
 
 .section-about {
   color: #eee;
-  background-color: #828081; }
+  background-color: #828081;
+  grid-column: full-start / full-end; }
 
 .section-projects {
   color: #eee;
-  background-color: #1E392A; }
+  background-color: #1E392A;
+  grid-column: section-start / section-end; }
 
 .section-bio {
   color: #eee;
-  background-color: orangered; }
+  background-color: orangered;
+  grid-column: section-start / section-end; }
 
 .section-contact {
   color: #eee;
-  background-color: #e9c893; }
+  background-color: #e9c893;
+  grid-column: section-start / section-end; }
+
+.footer {
+  color: #eee;
+  background-color: #1E392A;
+  grid-column: full-start / full-end; }
