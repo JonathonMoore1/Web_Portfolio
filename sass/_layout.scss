@@ -1,17 +1,17 @@
 .sidebar {
   color: $color-text-light;
-  background-color: #3CC47C;
+  background-color: $color-silt;
 
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
   grid-column: sidebar-start / sidebar-end;
 }
 
 .section-about {
   color: $color-text-light;
-  background-color: #828081;
+  background-color: $color-forest;
 
   // grid-row: 1 / 2;
-  grid-column: full-start / full-end;
+  grid-column: sidebar-start / full-end;
 }
 
 .section-projects {

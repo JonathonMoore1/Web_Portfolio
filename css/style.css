@@ -15,14 +15,14 @@ body {
 
 .sidebar {
   color: #eee;
-  background-color: #3CC47C;
-  grid-row: 1 / -1;
+  background-color: #e9c893;
+  grid-row: 2 / -1;
   grid-column: sidebar-start / sidebar-end; }
 
 .section-about {
   color: #eee;
-  background-color: #828081;
-  grid-column: full-start / full-end; }
+  background-color: #1E392A;
+  grid-column: sidebar-start / full-end; }
 
 .section-projects {
   color: #eee;
