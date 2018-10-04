@@ -7,7 +7,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: #BAC3C9;
+  background-color: #FFFFFF;
   font-size: 16px;
   font-family: 'Roboto', Helvetica, sans-serif;
   line-height: 1.7; }
@@ -58,6 +58,8 @@ body {
     transition: all .2s; }
     .header .btn:hover {
       background-color: #647C8D;
+      color: #ff5100;
+      border-bottom: 2px solid red;
       transform: translateY(-3px);
       box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
       .header .btn:hover::after {
@@ -70,7 +72,9 @@ body {
 .section-projects {
   color: #eee;
   background-color: #FFFFFF;
-  grid-column: full-start / full-end; }
+  grid-column: section-start / section-end; }
+  .section-projects .heading__secondary {
+    color: orangered; }
 
 .section-bio {
   color: #eee;

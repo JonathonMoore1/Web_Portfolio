@@ -59,6 +59,8 @@
 
     &:hover {
       background-color: $color-winter-strong;
+      color: rgb(255, 81, 0);
+      border-bottom: 2px solid red;
       transform: translateY(-3px);
       box-shadow: 0 1rem 2rem rgba($color-black, .2);
   
@@ -80,7 +82,12 @@
   color: $color-text-light;
   background-color: $color-white;
 
-  grid-column: full-start / full-end;
+  grid-column: section-start / section-end;
+
+  .heading__secondary {
+    color: orangered;
+  }
+
 }
 
 .section-bio {
