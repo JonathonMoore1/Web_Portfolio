@@ -7,7 +7,6 @@
     "devserver": "live-server",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "start": "npm-run-all --parallel devserver watch:sass",
-
     "compile:sass": "sass/main.scss"
   },
   "author": "Jon Moore",
