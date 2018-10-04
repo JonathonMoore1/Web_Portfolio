@@ -1,0 +1,105 @@
+.sidebar {
+  color: $color-text-light;
+  background-color: $color-winter-strong;
+
+  grid-row: 1 / -1;
+  grid-column: sidebar-start / sidebar-end;
+}
+
+.header {
+  color: $color-text-light;
+  // background-color: transparent;
+  background-image: linear-gradient(
+    to top, 
+    rgba(orangered, .65),
+    rgba(purple, .65)
+  ), url(../img/hellandme.jpg);
+  background-size: cover;
+
+  // grid-row: 1 / 2;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+
+  .heading__primary {
+
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    // padding: 2rem;
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+
+  }
+  
+  .about-me {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .btn {
+    grid-column: 2 / -1;
+    grid-row: 5 / -1;
+
+    width: 10rem;
+    height: 3rem;
+    color: $color-white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    // letter-spacing: .4em;
+    padding: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $color-white;
+    transition: all .2s;
+
+    &:hover {
+      background-color: $color-winter-strong;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; 
+      }
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+
+  }
+}
+
+.section-projects {
+  color: $color-text-light;
+  background-color: $color-white;
+
+  grid-column: full-start / full-end;
+}
+
+.section-bio {
+  color: $color-text-light;
+  background-color: $color-winter-background;
+
+  grid-column: full-start / full-end;
+}
+
+.section-contact {
+  color: $color-text-light;
+  background-color: $color-winter-background;
+
+  grid-column: full-start / full-end;
+}
+
+.footer {
+  color: $color-text-light;
+  background-color: $color-winter-strong;
+
+  grid-column: full-start / full-end;
+}

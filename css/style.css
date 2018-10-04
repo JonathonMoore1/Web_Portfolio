@@ -6,7 +6,11 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #BAC3C9;
+  font-size: 16px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  line-height: 1.7; }
 
 .container {
   display: grid;
@@ -15,31 +19,76 @@ body {
 
 .sidebar {
   color: #eee;
-  background-color: #e9c893;
-  grid-row: 2 / -1;
+  background-color: #647C8D;
+  grid-row: 1 / -1;
   grid-column: sidebar-start / sidebar-end; }
 
-.section-about {
+.header {
   color: #eee;
-  background-color: #1E392A;
-  grid-column: sidebar-start / full-end; }
+  background-image: linear-gradient(to top, rgba(255, 69, 0, 0.65), rgba(128, 0, 128, 0.65)), url(../img/hellandme.jpg);
+  background-size: cover;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem; }
+  .header .heading__primary {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    grid-column: 2 / -1;
+    grid-row: 3 / -1; }
+  .header .about-me {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+    font-size: 1.5rem;
+    font-weight: 300; }
+  .header .btn {
+    grid-column: 2 / -1;
+    grid-row: 5 / -1;
+    width: 10rem;
+    height: 3rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    transition: all .2s; }
+    .header .btn:hover {
+      background-color: #647C8D;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
+      .header .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+    .header .btn:active {
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.2); }
 
 .section-projects {
   color: #eee;
-  background-color: #1E392A;
-  grid-column: section-start / section-end; }
+  background-color: #FFFFFF;
+  grid-column: full-start / full-end; }
 
 .section-bio {
   color: #eee;
-  background-color: orangered;
-  grid-column: section-start / section-end; }
+  background-color: #BAC3C9;
+  grid-column: full-start / full-end; }
 
 .section-contact {
   color: #eee;
-  background-color: #e9c893;
-  grid-column: section-start / section-end; }
+  background-color: #BAC3C9;
+  grid-column: full-start / full-end; }
 
 .footer {
   color: #eee;
-  background-color: #1E392A;
+  background-color: #647C8D;
   grid-column: full-start / full-end; }
+
+.about-content {
+  color: black;
+  background-color: #fff; }
+  .about-content .header {
+    grid-row: 1 / 2; }
