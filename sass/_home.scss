@@ -84,8 +84,55 @@
 
   grid-column: section-start / section-end;
 
+  display: grid;
+
   .heading__secondary {
     color: orangered;
+  }
+
+  .project-card {
+
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    background-color: $color-text-light;
+    max-width: 30rem;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 60% 1fr;
+    position: relative;
+
+    &__img {
+      // grid-column: 1 / -1;
+      // display: block;
+      object-fit: cover;
+      width: 100%;
+      grid-row: 1 / 2;
+    }
+
+    &__side {
+
+      height: 100%;
+      width: 100%;
+
+      &--front {
+
+      }
+
+      &--back {
+
+      }
+    }
+
+    .project-info {
+
+      &__title {
+
+      }
+
+      &__tech {
+
+      }
+    }
   }
 
 }

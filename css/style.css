@@ -72,9 +72,25 @@ body {
 .section-projects {
   color: #eee;
   background-color: #FFFFFF;
-  grid-column: section-start / section-end; }
+  grid-column: section-start / section-end;
+  display: grid; }
   .section-projects .heading__secondary {
     color: orangered; }
+  .section-projects .project-card {
+    box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2);
+    background-color: #eee;
+    max-width: 30rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 60% 1fr;
+    position: relative; }
+    .section-projects .project-card__img {
+      object-fit: cover;
+      width: 100%;
+      grid-row: 1 / 2; }
+    .section-projects .project-card__side {
+      height: 100%;
+      width: 100%; }
 
 .section-bio {
   color: #eee;
