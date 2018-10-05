@@ -5,9 +5,14 @@
   padding: 0;
   box-sizing: inherit; }
 
+html {
+  height: 100%;
+  font-size: 62.5%; }
+
 body {
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
-  background-color: #FFFFFF;
   font-size: 16px;
   font-family: 'Roboto', Helvetica, sans-serif;
   line-height: 1.7; }
@@ -15,7 +20,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [sidebar-start] 25rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 14rem)) [section-end] 1fr [full-end]; }
+  grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 20rem)) [section-end] 1fr [full-end]; }
 
 .sidebar {
   color: #eee;
@@ -33,7 +38,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem; }
   .header .heading__primary {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
     margin-bottom: 2rem;
     grid-column: 2 / -1;
@@ -41,15 +46,16 @@ body {
   .header .about-me {
     grid-column: 2 / -1;
     grid-row: 4 / 5;
-    font-size: 1.5rem;
-    font-weight: 300; }
+    font-size: 2rem;
+    font-weight: 500; }
   .header .btn {
     grid-column: 2 / -1;
     grid-row: 5 / -1;
-    width: 10rem;
-    height: 3rem;
+    width: 15rem;
+    height: 5rem;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
     text-transform: uppercase;
     padding: none;
     background-color: transparent;
@@ -57,9 +63,9 @@ body {
     border-bottom: 2px solid #FFFFFF;
     transition: all .2s; }
     .header .btn:hover {
-      background-color: #647C8D;
+      background-color: #FFFFFF;
       color: #ff5100;
-      border-bottom: 2px solid red;
+      border-bottom: none;
       transform: translateY(-3px);
       box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
       .header .btn:hover::after {
@@ -92,20 +98,23 @@ body {
     grid-row: 2 / 3;
     grid-column: 2 / 7;
     display: grid;
-    grid-template-columns: repeat(3, 20rem);
-    grid-template-rows: repeat(4, 30rem);
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-rows: repeat(4, 45rem);
     grid-gap: 3rem; }
   .section-projects .project-card {
     box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2);
-    max-width: 30rem;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     display: grid;
     position: relative; }
     .section-projects .project-card__img {
-      background-color: red;
-      background-size: 100%;
+      background-image: linear-gradient(to top, rgba(228, 231, 232, 0.7), rgba(100, 124, 141, 0.7)), url(../img/trillo.png);
       display: block;
-      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 320px;
+      width: 100%;
       border-bottom: 2px solid black; }
     .section-projects .project-card__side {
       grid-row: 1 / -1;
