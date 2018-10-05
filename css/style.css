@@ -74,7 +74,7 @@ body {
   background-color: #FFFFFF;
   grid-column: section-start / section-end;
   display: grid;
-  grid-template-columns: 1fr repeat(6, min-content) 1fr;
+  grid-template-columns: 1fr repeat(5, min-content) 1fr;
   grid-template-rows: repeat(3, min-content); }
   .section-projects .heading__secondary {
     margin: 3rem 0;
