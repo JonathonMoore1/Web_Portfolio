@@ -26,9 +26,5 @@ body {
 .container {
     display: grid;
     grid-template-rows: 100vh repeat(5, min-content);
-    grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 20rem)) [section-end] 1fr [full-end];
-    // grid-template-columns: [sidebar-start] 30rem [sidebar-end main-start] repeat(4, 1fr) [main-end];
-    // height: auto;
-    // background-color: $color-primary-dark;
-    // border-left: 2px solid $color-text-green;
+    grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 25rem)) [section-end] 1fr [full-end];
 }

@@ -175,18 +175,18 @@
 
 }
 
-.section-bio {
-  color: $color-text-light;
-  background-color: $color-winter-background;
+// .section-bio {
+//   color: $color-text-light;
+//   background-color: $color-winter-background;
 
-  grid-column: full-start / full-end;
-}
+//   grid-column: full-start / full-end;
+// }
 
 .section-contact {
   color: $color-text-light;
   background-color: $color-winter-background;
 
-  grid-column: full-start / full-end;
+  grid-column: section-start / section-end;
 }
 
 .footer {

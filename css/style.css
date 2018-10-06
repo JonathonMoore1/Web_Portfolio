@@ -20,7 +20,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
-  grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 20rem)) [section-end] 1fr [full-end]; }
+  grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 25rem)) [section-end] 1fr [full-end]; }
 
 .sidebar {
   color: #eee;
@@ -129,15 +129,10 @@ body {
         margin-bottom: 2rem;
         border-bottom: 1px solid #FFFFFF; }
 
-.section-bio {
-  color: #eee;
-  background-color: #BAC3C9;
-  grid-column: full-start / full-end; }
-
 .section-contact {
   color: #eee;
   background-color: #BAC3C9;
-  grid-column: full-start / full-end; }
+  grid-column: section-start / section-end; }
 
 .footer {
   color: #eee;
