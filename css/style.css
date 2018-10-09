@@ -194,6 +194,12 @@ body {
   color: #eee;
   background-color: #647C8D;
   grid-column: full-start / full-end; }
+  .footer .copyright {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 4rem 0; }
 
 .about-content {
   color: black;
