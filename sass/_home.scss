@@ -186,7 +186,8 @@
 
     display: grid;
     grid-template-columns: repeat(3, 30rem);
-    grid-template-rows: repeat(3, 45rem);
+    // grid-template-rows: repeat(3, 45rem);
+    grid-template-rows: repeat(auto-fill, minmax(min-content, 45rem));
     grid-gap: 3.5rem;
   }
 
@@ -195,6 +196,10 @@
     // grid-template-columns: 1fr minmax(min-content, 20rem) 1fr;
     grid-template-rows: repeat(7, 1fr);
     background-color: $color-winter-background;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    overflow: hidden;
+
 
 
     &__top {
