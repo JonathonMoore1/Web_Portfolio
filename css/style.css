@@ -121,8 +121,8 @@ body {
 .section-projects {
   color: #eee;
   background-color: #FFFFFF;
-  grid-column: section-start / section-end;
-  padding: 4rem 0;
+  grid-column: section-start / full-end;
+  padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr repeat(5, min-content) 1fr;
   grid-template-rows: repeat(3, min-content); }
@@ -140,9 +140,9 @@ body {
       display: block; }
   .section-projects .project-grid {
     grid-row: 2 / 3;
-    grid-column: 2 / 7;
+    grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(3, 30rem);
+    grid-template-columns: repeat(auto-fill, 30rem);
     grid-template-rows: repeat(auto-fill, minmax(min-content, 45rem));
     grid-gap: 3.5rem; }
   .section-projects .project-card {
@@ -159,7 +159,7 @@ body {
       grid-column: 1 / -1;
       grid-row: 5 / -1;
       display: grid;
-      grid-template-rows: repeat(3, min-content);
+      grid-template-rows: repeat(3, min-content) 2rem;
       grid-template-columns: 1fr repeat(2, minmax(min-content, 10rem)) 1fr; }
     .section-projects .project-card__img {
       display: block;
