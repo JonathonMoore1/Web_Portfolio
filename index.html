@@ -15,17 +15,20 @@
     <div class="container">
         <!-- <aside> -->
         <div class="sidebar">
-            <!-- <div class="me">
-                    <img src="img/jonandwww_LI (6).jpg" alt="Me" class="me__img">
-                    <header class="header">
-                        <div class="header__text--main">Jon Moore</div>
-                        <div class="header__text--sub">Software Engineer, Writer</div>
-                    </header>
-                </div>
-                <nav class="navigation">
-
-                </nav> -->
-            Sidebar
+            <div class="img-box">
+                <img src="#" alt="Me" class="img-box__img">
+                <span class="img-box__name">Jon Moore</span>
+                <span class="img-box__sub">Web Developer</span>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About me</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                    <!-- <li class="navigation__item"><a href="#" class="navigation__link"></a></li> -->
+                </ul>
+            </nav>
         </div>
         <!-- </aside> -->
         <!-- <main class="main"> -->
@@ -44,117 +47,138 @@
 
         <section class="section-projects">
             <div class="heading__secondary">
-                <h2 class="heading__secondary--title">Projects</h2>
-                <p class="heading__secondary--sub">A gallery of my work</p>
+                <span class="heading__secondary--title">Projects</span>
+                <span class="heading__secondary--sub">A gallery of my work</span>
             </div>
-            <div class="project-card">
-                <div class="project-card__side">
-                    <div class="project-card__side--front">
-                        <img src="#" alt="hi" class="project-card__img">
-                        <div class="project-info">
-                            <div class="project-info__title">
-                                <h3>Nexter</h3>
-                            </div>
-                            <div class="project-info__tech">
-                                <p>Sass, CSS Grid, HTML</p>
-                            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-card__img"></div>
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Nexter</h3>
+                        </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS Grid, HTML</p>
+                        </div>
+                        <div class="project-links">
+                            <ul>
+                                <li><a href="#" class="project-links--site">Nexter</a></li>
+                                <li><a href="#" class="project-links--github">GitHub</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="project-card__side">
-                    <div class="project-card__side--back">
-                        <div class="project-card__description">
-                            The landing page for Nexter, a fictional luxury home
-                            realty company. Built entirely with CSS Grids, Sass, and HTML
-                            Design by Jonas Schmedtmann.
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Trillo</h3>
                         </div>
-                        <a href="https://jonrmoore.github.io/nexter" class="project-card__link">Go to Nexter</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__side">
-                    <div class="project-card__side--front">
-                        <img src="#" alt="hi" class="project-card__img">
-                        <div class="project-info">
-                            <div class="project-info__title">
-                                <h3>Trillo</h3>
-                            </div>
-                            <div class="project-info__tech">
-                                <p>Sass, CSS Flexbox, HTML</p>
-                            </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS Flexbox, HTML</p>
                         </div>
                     </div>
                 </div>
-                <div class="project-card__side">
-                    <div class="project-card__side--back">
-                        <div class="project-card__description">
-                            Trillo is the best way to get the greatest deals when booking your next vacation. 
-                            This landing page was built entirely with CSS Flexbox, Sass, and HTML
-                            Design by Jonas Schmedtmann.
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
                         </div>
-                        <a href="https://jonrmoore.github.io/nexter" class="project-card__link">Go to Trillo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__side">
-                    <div class="project-card__side--front">
-                        <img src="#" alt="hi" class="project-card__img">
-                        <div class="project-info">
-                            <div class="project-info__title">
-                                <h3>Natours</h3>
-                            </div>
-                            <div class="project-info__tech">
-                                <p>Sass, CSS animations, HTML</p>
-                            </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
                         </div>
                     </div>
                 </div>
-                <div class="project-card__side">
-                    <div class="project-card__side--back">
-                        <div class="project-card__description">
-                            Looking for adventure? Look no further than Natours, until your 
-                            realize it's not a real company, and then maybe look elsewhere. 
-                            This is composed entirely of custom CSS components, inluding a grid
-                            built with floats. Design by Jonas Schmedtmann.
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
                         </div>
-                        <a href="https://jonrmoore.github.io/nexter" class="project-card__link">Go to Natours</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__side">
-                    <div class="project-card__side--front">
-                        <img src="#" alt="hi" class="project-card__img">
-                        <div class="project-info">
-                            <div class="project-info__title">
-                                <h3>Ancestry.nom</h3>
-                            </div>
-                            <div class="project-info__tech">
-                                <p>Express, MongoDB, React, Passport.js</p>
-                            </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
                         </div>
                     </div>
                 </div>
-                <div class="project-card__side">
-                    <div class="project-card__side--back">
-                        <div class="project-card__description">
-                            Save and share family recipes, grow closer together. Ancestry.nom digitalizes 
-                            the family recipe book. I worked on this project as a backend developer, creating the RESTful API, server, 
-                            and configuring/seeding the database.
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
                         </div>
-                        <a href="https://jonrmoore.github.io/nexter" class="project-card__link">Go to Ancestry.nom</a>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
+                        </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
+                        </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
+                        </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="#" alt="hi" class="project-card__img">
+                    <div class="project-info">
+                        <div class="project-info__title">
+                            <h3>Natours</h3>
+                        </div>
+                        <div class="project-info__tech">
+                            <p>Sass, CSS animations, HTML</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section-contact">
+            <div class="heading__primary">
+                <h1>Get in touch</h1>
+                <form action="/submit" class="form">
+                    <label for="name" class="label--name">Full name</label>
+                    <input type="text" name="name" placeholder="Your name here" class="input__name">
+                    <label for="message" class="label--message">Message</label>
+                    <!-- <textarea type="text" name="message" placeholder="Write your message here" class="input__message"></textarea> -->
+                    <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                </form>
+                <button class="btn">Submit</button>
+            </div>
+        </section>
 
-        <section class="section-bio">Bio section</section>
-        <section class="section-contact">Contact form</section>
         <footer class="footer">Footer</footer>
         <!-- </main> -->
+
     </div>
+
+    <!-- <section class="section-bio">Bio section</section> -->
+
 </body>
 
 </html>
