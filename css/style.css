@@ -132,7 +132,21 @@ body {
 .section-contact {
   color: #eee;
   background-color: #BAC3C9;
-  grid-column: section-start / section-end; }
+  grid-column: section-start / section-end;
+  padding: 3rem 14rem;
+  width: 100%; }
+  .section-contact .form {
+    display: flex;
+    flex-direction: column; }
+    .section-contact .form::-webkit-input-placeholder {
+      color: pink; }
+    .section-contact .form ::-moz-placeholder {
+      text-align: initial; }
+    .section-contact .form .input__name {
+      width: 45%; }
+    .section-contact .form .input__message {
+      width: 75%;
+      height: 15rem; }
 
 .footer {
   color: #eee;

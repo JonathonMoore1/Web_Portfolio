@@ -159,12 +159,13 @@
             <div class="heading__primary">
                 <h1>Get in touch</h1>
                 <form action="/submit" class="form">
-                    <label for="name">Full name</label>
-                    <input type="text" name="name" placeholder="Your name here">
-                    <label for="message">Message</label>
-                    <input type="text" name="message" placeholder="Write your message here">
+                    <label for="name" class="label--name">Full name</label>
+                    <input type="text" name="name" placeholder="Your name here" class="input__name">
+                    <label for="message" class="label--message">Message</label>
+                    <!-- <textarea type="text" name="message" placeholder="Write your message here" class="input__message"></textarea> -->
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </form>
-                <button class="btn--submit">Submit</button>
+                <button class="btn">Submit</button>
             </div>
         </section>
 
