@@ -208,7 +208,7 @@
 
     &__img {
 
-      background-image:  url(../img/trillo.png);
+      background-color: red;
       opacity: .5;
 
       display: block;
@@ -220,6 +220,12 @@
       width: 100%;
 
       border-bottom: 2px solid black;
+
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
 
     .project-info {
