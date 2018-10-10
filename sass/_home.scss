@@ -1,3 +1,7 @@
+//===================
+// TODO: Separate into approprate files
+// ==================
+
 .sidebar {
   color: $color-text-light;
   background-color: $color-winter-strong;
@@ -85,7 +89,6 @@
   ), url(../img/IMG_2324.jpg);
   background-size: cover;
 
-  // grid-row: 1 / 2;
   grid-column: full-start / full-end;
 
   display: grid;
@@ -93,65 +96,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem;
 
-  .heading__primary {
-
-    font-size: 3.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    // padding: 2rem;
-    grid-column: 2 / -1;
-    grid-row: 3 / -1;
-
-  }
-  
   .about-me {
     grid-column: 2 / -1;
     grid-row: 4 / 5;
     font-size: 2rem;
     font-weight: 500;
   }
-  .btn {
-    grid-column: 2 / -1;
-    grid-row: 5 / -1;
-
-    width: 15rem;
-    height: 5rem;
-    color: $color-white;
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    // letter-spacing: .4em;
-    padding: none;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid $color-white;
-    transition: all .2s;
-
-    &:hover {
-      background-color: $color-white;
-      color: rgb(255, 81, 0);
-      border-bottom: none;
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, .2);
-  
-      &::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0; 
-      }
-    }
-
-    &:active {
-      transform: translateY(-1px);
-      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
-    }
-
-  }
 }
 
 .section-projects {
   color: $color-text-light;
   background-color: $color-white;
-  // position: relative;
 
   grid-column: section-start / full-end;
   padding: 4rem 2rem;
@@ -159,26 +114,6 @@
   display: grid;
   grid-template-columns: 1fr repeat(5, min-content) 1fr;
   grid-template-rows: repeat(3, min-content);
-
-
-  .heading__secondary {
-    margin: 3rem 0;
-    color: orangered;
-    position: relative;
-    grid-column: 1 / -1;
-    // display: inline-block
-
-    &--title {
-      display: block;
-      font-size: 3rem;
-      font-weight: 300;
-      text-transform: uppercase;
-    }
-
-    &--sub {
-      display: block;
-    }
-  }
 
   .project-grid {
     grid-row: 2 / 3;
@@ -254,7 +189,17 @@
     .btn {
       grid-row: 3 / 4;
       grid-column: 2 / 4;
-      // margin-bottom:
+    }
+  }
+
+  .github-link {
+    color: $color-black;
+    margin-top: 3rem;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: orangered;
     }
   }
 }
@@ -288,7 +233,7 @@
   .contact__links {
 
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: center;
     justify-content: space-around;
 
@@ -307,59 +252,6 @@
     }
   }
 }
-
-// .section-contact {
-//   color: $color-text-light;
-//   background-color: $color-winter-background;
-
-//   grid-column: section-start / section-end;
-
-//   padding: 3rem 14rem;
-//   width: 100%;
-
-//   .form {
-//     // display: grid;
-//     // grid-template-columns: 1fr min-content 1fr;
-//     // grid-template-rows: repeat(4, 1fr);
-//     display: flex;
-//     flex-direction: column;
-//     // align-items: center;
-
-//     &::-webkit-input-placeholder {
-//       color: pink;
-//     }
-
-//     ::-moz-placeholder {
-//       text-align: initial;
-//     }
-    
-//     .label {
-
-//       &--name {
-
-//       }
-
-//       &--message {
-
-//       }
-//     }
-
-//     .input {
-
-//       &__name {
-//         width: 45%;
-//       }
-
-//       &__message {
-//         width: 75%;
-//         height: 15rem;
-//       }
-
-     
-//     }
-//   }
-  
-// }
 
 .footer {
   color: $color-text-light;

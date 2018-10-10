@@ -22,6 +22,53 @@ body {
   grid-template-rows: 100vh repeat(5, min-content);
   grid-template-columns: [sidebar-start] 30rem [sidebar-end full-start] 1fr [section-start] repeat(5, minmax(min-content, 25rem)) [section-end] 1fr [full-end]; }
 
+.heading__primary {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  grid-column: 2 / -1;
+  grid-row: 3 / -1; }
+
+.heading__secondary {
+  margin: 3rem 0;
+  color: orangered;
+  position: relative;
+  grid-column: 1 / -1; }
+  .heading__secondary--title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .heading__secondary--sub {
+    display: block; }
+
+.btn {
+  grid-column: 2 / -1;
+  grid-row: 5 / -1;
+  width: 15rem;
+  height: 5rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  transition: all .2s; }
+  .btn:hover {
+    background-color: #FFFFFF;
+    color: #ff5100;
+    border-bottom: none;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.2); }
+
 .sidebar {
   color: #eee;
   background-color: #647C8D;
@@ -80,43 +127,11 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5rem; }
-  .header .heading__primary {
-    font-size: 3.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    grid-column: 2 / -1;
-    grid-row: 3 / -1; }
   .header .about-me {
     grid-column: 2 / -1;
     grid-row: 4 / 5;
     font-size: 2rem;
     font-weight: 500; }
-  .header .btn {
-    grid-column: 2 / -1;
-    grid-row: 5 / -1;
-    width: 15rem;
-    height: 5rem;
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: none;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #FFFFFF;
-    transition: all .2s; }
-    .header .btn:hover {
-      background-color: #FFFFFF;
-      color: #ff5100;
-      border-bottom: none;
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
-      .header .btn:hover::after {
-        transform: scaleX(1.4) scaleY(1.6);
-        opacity: 0; }
-    .header .btn:active {
-      transform: translateY(-1px);
-      box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.2); }
 
 .section-projects {
   color: #eee;
@@ -126,18 +141,6 @@ body {
   display: grid;
   grid-template-columns: 1fr repeat(5, min-content) 1fr;
   grid-template-rows: repeat(3, min-content); }
-  .section-projects .heading__secondary {
-    margin: 3rem 0;
-    color: orangered;
-    position: relative;
-    grid-column: 1 / -1; }
-    .section-projects .heading__secondary--title {
-      display: block;
-      font-size: 3rem;
-      font-weight: 300;
-      text-transform: uppercase; }
-    .section-projects .heading__secondary--sub {
-      display: block; }
   .section-projects .project-grid {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
@@ -188,6 +191,13 @@ body {
     .section-projects .project-card .btn {
       grid-row: 3 / 4;
       grid-column: 2 / 4; }
+  .section-projects .github-link {
+    color: #0a0a0a;
+    margin-top: 3rem; }
+    .section-projects .github-link a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: orangered; }
 
 .section-contact {
   color: #FFFFFF;
@@ -208,7 +218,7 @@ body {
       display: block; }
   .section-contact .contact__links {
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: center;
     justify-content: space-around; }
     .section-contact .contact__links--linkedin {
@@ -228,9 +238,3 @@ body {
     font-weight: 100;
     text-align: center;
     padding: 4rem 0; }
-
-.about-content {
-  color: black;
-  background-color: #fff; }
-  .about-content .header {
-    grid-row: 1 / 2; }

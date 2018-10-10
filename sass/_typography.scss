@@ -1,52 +1,67 @@
-// body {
-//     font-size: 16px;
-//     font-family: 'Roboto', Helvetica, sans-serif;
-//     line-height: 1.7;
-//     // color: rgb(192, 192, 192);
-// }
+.heading {
 
-// .heading-primary {
-//     text-transform: uppercase;
-//     color: $color-text-medium;
+  &__primary {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    // padding: 2rem;
+    grid-column: 2 / -1;
+    grid-row: 3 / -1;
+  }
+  
+  &__secondary {
+    margin: 3rem 0;
+    color: orangered;
+    position: relative;
+    grid-column: 1 / -1;
+    // display: inline-block
 
-//     &--main {
-//         display: block;
-//         font-size: 1.5rem;
-//         font-weight: 500;
-//         letter-spacing: .4rem;
-//     }
+    &--title {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
 
-//     &--sub {
-//         display: block;
-//         font-size: 1rem;
-//         font-weight: 300;
-//         letter-spacing: .15rem;
-//     }
-// }
+    &--sub {
+      display: block;
+    }
+  }
+}
 
-// .heading-secondary {
-//     text-transform: uppercase;
-//     // text-decoration: underline;
-//     color: #bb5f3e;
-//     font-weight: 300;
-//     font-size: 2.5rem;
-//     letter-spacing: 1rem;
-//     border-bottom: 1px solid $color-primary-light;
-// }
+.btn {
+  grid-column: 2 / -1;
+  grid-row: 5 / -1;
 
-// .heading-tertiary {
-//     text-transform: lowercase;
-//     font-weight: 300;
-//     font-size: 1.5rem;
-//     letter-spacing: .18rem;
-//     color: $color-text-eggwhite;
-// }
+  width: 15rem;
+  height: 5rem;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  // letter-spacing: .4em;
+  padding: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $color-white;
+  transition: all .2s;
 
-// .paragraph {
-//     padding: 2rem 3rem;
-//     font-weight: 300;
-//     font-size: 1rem;
-//     letter-spacing: .15rem;
-//     line-height: 2.84rem;
-//     color: $color-text-medium;
-// }
+  &:hover {
+    background-color: $color-white;
+    color: rgb(255, 81, 0);
+    border-bottom: none;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; 
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  }
+
+}
