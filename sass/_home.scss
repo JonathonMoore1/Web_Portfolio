@@ -147,19 +147,19 @@
   padding: 4rem 2rem;
 
   display: grid;
-  grid-template-columns: 1fr repeat(5, min-content) 1fr;
+  grid-template-columns: 1fr repeat(2, minmax(min-content, 50rem)) 1fr;
   grid-template-rows: repeat(3, min-content);
 
   .project-grid {
     grid-row: 2 / 3;
-    grid-column: 1 / -1;
+    grid-column: 2 / 4;
 
     display: grid;
     // grid-template-columns: repeat(4, 30rem);
     grid-template-columns: repeat(auto-fill, 30rem);
     // grid-template-rows: repeat(3, 45rem);
     grid-template-rows: repeat(auto-fill, minmax(min-content, 45rem));
-    grid-gap: 3.5rem;
+    grid-gap: 4rem;
   }
 
   .project-card {
