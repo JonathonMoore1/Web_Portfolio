@@ -21,7 +21,7 @@ body {
 
 .container {
   background-color: #e6dada;
-  background-image: linear-gradient(rgba(230, 218, 218, 0.4), rgba(230, 218, 218, 0.4)), url(../img/triangular.png);
+  background-image: linear-gradient(rgba(230, 218, 218, 0.4), rgba(230, 218, 218, 0.4)), url(../img/fresh_snow.png);
   padding: 0 1rem;
   grid-column: 2 / -1;
   display: grid;
@@ -232,7 +232,7 @@ body {
 
 .footer {
   color: #eee;
-  background-color: #8a8a8a;
+  background-color: #6b8586;
   grid-column: full-start / full-end; }
   .footer .copyright {
     color: #FFFFFF;
