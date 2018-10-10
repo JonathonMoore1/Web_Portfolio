@@ -190,23 +190,33 @@ body {
       grid-column: 2 / 4; }
 
 .section-contact {
-  color: #eee;
+  color: #FFFFFF;
   background-color: #BAC3C9;
   grid-column: section-start / section-end;
-  padding: 3rem 14rem;
-  width: 100%; }
-  .section-contact .form {
+  padding: 3rem; }
+  .section-contact .heading__secondary {
+    margin: 3rem 0;
+    color: orangered;
+    position: relative;
+    grid-column: 1 / -1; }
+    .section-contact .heading__secondary--title {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .section-contact .heading__secondary--sub {
+      display: block; }
+  .section-contact .contact__links {
     display: flex;
-    flex-direction: column; }
-    .section-contact .form::-webkit-input-placeholder {
-      color: pink; }
-    .section-contact .form ::-moz-placeholder {
-      text-align: initial; }
-    .section-contact .form .input__name {
-      width: 45%; }
-    .section-contact .form .input__message {
-      width: 75%;
-      height: 15rem; }
+    width: 100%;
+    align-items: center;
+    justify-content: space-around; }
+    .section-contact .contact__links--linkedin {
+      height: 10rem;
+      width: 10rem; }
+    .section-contact .contact__links--github {
+      height: 10rem;
+      width: 10rem; }
 
 .footer {
   color: #eee;

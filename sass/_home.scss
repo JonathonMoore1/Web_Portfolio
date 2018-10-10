@@ -260,57 +260,106 @@
 }
 
 .section-contact {
-  color: $color-text-light;
+  color: $color-white;
   background-color: $color-winter-background;
 
   grid-column: section-start / section-end;
+  padding: 3rem;
 
-  padding: 3rem 14rem;
-  width: 100%;
+  .heading__secondary {
+    margin: 3rem 0;
+    color: orangered;
+    position: relative;
+    grid-column: 1 / -1;
+    // display: inline-block
 
-  .form {
-    // display: grid;
-    // grid-template-columns: 1fr min-content 1fr;
-    // grid-template-rows: repeat(4, 1fr);
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-
-    &::-webkit-input-placeholder {
-      color: pink;
+    &--title {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
     }
 
-    ::-moz-placeholder {
-      text-align: initial;
-    }
-    
-    .label {
-
-      &--name {
-
-      }
-
-      &--message {
-
-      }
-    }
-
-    .input {
-
-      &__name {
-        width: 45%;
-      }
-
-      &__message {
-        width: 75%;
-        height: 15rem;
-      }
-
-     
+    &--sub {
+      display: block;
     }
   }
-  
+
+  .contact__links {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    &--email {
+
+    }
+
+    &--linkedin {
+      height: 10rem;
+      width: 10rem;
+    }
+
+    &--github {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
 }
+
+// .section-contact {
+//   color: $color-text-light;
+//   background-color: $color-winter-background;
+
+//   grid-column: section-start / section-end;
+
+//   padding: 3rem 14rem;
+//   width: 100%;
+
+//   .form {
+//     // display: grid;
+//     // grid-template-columns: 1fr min-content 1fr;
+//     // grid-template-rows: repeat(4, 1fr);
+//     display: flex;
+//     flex-direction: column;
+//     // align-items: center;
+
+//     &::-webkit-input-placeholder {
+//       color: pink;
+//     }
+
+//     ::-moz-placeholder {
+//       text-align: initial;
+//     }
+    
+//     .label {
+
+//       &--name {
+
+//       }
+
+//       &--message {
+
+//       }
+//     }
+
+//     .input {
+
+//       &__name {
+//         width: 45%;
+//       }
+
+//       &__message {
+//         width: 75%;
+//         height: 15rem;
+//       }
+
+     
+//     }
+//   }
+  
+// }
 
 .footer {
   color: $color-text-light;
