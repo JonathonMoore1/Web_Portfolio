@@ -3,7 +3,7 @@
 // ==================
 
 .sidebar {
-  color: $color-text-light;
+  color: $color-white;
   background-color: $color-winter-strong;
 
   grid-row: 1 / -1;
@@ -84,8 +84,9 @@
   // background-color: transparent;
   background-image: linear-gradient(
     to top, 
-    rgba(orangered, .65),
-    rgba(purple, .65)
+    rgba(rgb(0, 255, 200), .65),
+    rgba(rgb(28, 0, 128), .65)
+    
   ), url(../img/IMG_2324.jpg);
   background-size: cover;
 
