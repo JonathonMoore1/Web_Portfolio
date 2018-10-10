@@ -2,11 +2,8 @@
 
   &__primary {
     font-size: 3.5rem;
-    font-weight: 300;
-    margin-bottom: 2rem;
-    // padding: 2rem;
-    grid-column: 2 / -1;
-    grid-row: 3 / -1;
+    font-weight: 500;
+    text-transform: uppercase;
   }
   
   &__secondary {
@@ -30,8 +27,6 @@
 }
 
 .btn {
-  grid-column: 2 / -1;
-  grid-row: 5 / -1;
 
   width: 15rem;
   height: 5rem;
@@ -47,8 +42,8 @@
   transition: all .2s;
 
   &:hover {
-    background-color: $color-white;
-    color: rgb(255, 81, 0);
+    background-color: $color-winter-strong;
+    color: $color-accent;
     border-bottom: none;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, .2);

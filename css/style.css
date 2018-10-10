@@ -83,22 +83,37 @@ body {
 .header {
   color: #0a0a0a;
   padding: 2rem;
-  background-size: cover;
   grid-column: section-start / section-end;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem; }
-  .header .about-me {
-    grid-column: 2 / -1;
-    grid-row: 4 / 5;
+  grid-template-columns: 1fr minmax(20rem, 100rem) 1fr; }
+  .header__heading {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem; }
+    .header__heading::after {
+      content: "";
+      display: block;
+      width: 45%;
+      height: 3px;
+      background-color: #fc4b71;
+      transform: translateX(6rem); }
+  .header__statement {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     font-size: 2rem;
-    font-weight: 500; }
+    font-weight: 300; }
+  .header__btn {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center; }
 
 .section-projects {
   color: #eee;
   background-color: #FFFFFF;
-  grid-column: section-start / full-end;
+  grid-column: section-start / section-end;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr repeat(5, min-content) 1fr;
@@ -203,10 +218,8 @@ body {
 
 .heading__primary {
   font-size: 3.5rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
-  grid-column: 2 / -1;
-  grid-row: 3 / -1; }
+  font-weight: 500;
+  text-transform: uppercase; }
 
 .heading__secondary {
   margin: 3rem 0;
@@ -222,8 +235,6 @@ body {
     display: block; }
 
 .btn {
-  grid-column: 2 / -1;
-  grid-row: 5 / -1;
   width: 15rem;
   height: 5rem;
   color: #FFFFFF;
@@ -236,8 +247,8 @@ body {
   border-bottom: 2px solid #FFFFFF;
   transition: all .2s; }
   .btn:hover {
-    background-color: #FFFFFF;
-    color: #ff5100;
+    background-color: #647C8D;
+    color: #fc4b71;
     border-bottom: none;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2); }
