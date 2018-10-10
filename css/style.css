@@ -21,6 +21,7 @@ body {
 
 .container {
   background-color: #e6dada;
+  padding: 0 1rem;
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
@@ -113,7 +114,7 @@ body {
 .section-projects {
   color: #eee;
   background-color: #FFFFFF;
-  grid-column: section-start / section-end;
+  grid-column: full-start / full-end;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr repeat(2, minmax(min-content, 50rem)) 1fr;
@@ -169,6 +170,8 @@ body {
       grid-row: 3 / 4;
       grid-column: 2 / 4; }
   .section-projects .github-link {
+    grid-row: 3;
+    grid-column: 1 / -1;
     color: #0a0a0a;
     margin-top: 3rem; }
     .section-projects .github-link a {

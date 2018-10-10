@@ -143,7 +143,7 @@
   color: $color-text-light;
   background-color: $color-white;
 
-  grid-column: section-start / section-end;
+  grid-column: full-start / full-end;
   padding: 4rem 2rem;
 
   display: grid;
@@ -228,6 +228,8 @@
   }
 
   .github-link {
+    grid-row: 3;
+    grid-column: 1 / -1;
     color: $color-black;
     margin-top: 3rem;
 
