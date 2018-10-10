@@ -21,10 +21,11 @@ body {
 
 .container {
   background-color: #e6dada;
+  background-image: linear-gradient(rgba(230, 218, 218, 0.4), rgba(230, 218, 218, 0.4)), url(../img/triangular.png);
   padding: 0 1rem;
   grid-column: 2 / -1;
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-rows: 100vh repeat(6, min-content);
   grid-template-columns: [full-start] 1fr [section-start] repeat(4, minmax(min-content, 30rem)) [section-end] 1fr [full-end]; }
 
 .sidebar {
@@ -109,6 +110,15 @@ body {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     justify-self: center; }
+
+.section-skills {
+  grid-column: full-start / full-end;
+  height: 80vh;
+  background-image: url(../img/IMG_2368.resized.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr repeat(3, 30vh) 1fr; }
 
 .section-projects {
   color: #eee;
