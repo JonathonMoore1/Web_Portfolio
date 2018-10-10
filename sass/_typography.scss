@@ -8,7 +8,7 @@
   
   &__secondary {
     // margin: 3rem 0;
-    color: $color-accent;
+    color: $color-white;
     // position: relative;
     // grid-column: 1 / -1;
     // display: inline-block
@@ -20,7 +20,7 @@
       display: block;
       font-weight: 300;
       font-size: 1.5rem;
-      color: $color-accent;
+      color: $color-black;
     }
   }
 }
@@ -29,7 +29,7 @@
 
   width: 15rem;
   height: 5rem;
-  color: $color-white;
+  color: $color-gunmetal;
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -37,13 +37,13 @@
   padding: none;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid $color-white;
+  border-bottom: 2px solid $color-gunmetal;
   transition: all .2s;
 
   &:hover {
-    background-color: $color-background-2;
-    color: $color-accent;
-    border-bottom: none;
+    background-color: $color-accent;
+    color: $color-white;
+    border: 1px solid $color-black;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
