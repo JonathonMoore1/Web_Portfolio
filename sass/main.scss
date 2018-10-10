@@ -1,14 +1,7 @@
+@import "base";
+@import "home";
+@import "typography";
+@import "animations";
+
 @import "utilities";
 @import "variables";
-
-@import "animations";
-@import "base";
-
-@import "sidebar";
-@import "typography";
-
-// BASE
-@import "home";
-
-// PAGES
-@import "about";
