@@ -1,3 +1,7 @@
+//===================
+// TODO: Separate into approprate files
+// ==================
+
 .sidebar {
   color: $color-text-light;
   background-color: $color-winter-strong;
@@ -257,6 +261,17 @@
       // margin-bottom:
     }
   }
+
+  .github-link {
+    color: $color-black;
+    margin-top: 3rem;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: orangered;
+    }
+  }
 }
 
 .section-contact {
@@ -288,7 +303,7 @@
   .contact__links {
 
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: center;
     justify-content: space-around;
 
@@ -307,59 +322,6 @@
     }
   }
 }
-
-// .section-contact {
-//   color: $color-text-light;
-//   background-color: $color-winter-background;
-
-//   grid-column: section-start / section-end;
-
-//   padding: 3rem 14rem;
-//   width: 100%;
-
-//   .form {
-//     // display: grid;
-//     // grid-template-columns: 1fr min-content 1fr;
-//     // grid-template-rows: repeat(4, 1fr);
-//     display: flex;
-//     flex-direction: column;
-//     // align-items: center;
-
-//     &::-webkit-input-placeholder {
-//       color: pink;
-//     }
-
-//     ::-moz-placeholder {
-//       text-align: initial;
-//     }
-    
-//     .label {
-
-//       &--name {
-
-//       }
-
-//       &--message {
-
-//       }
-//     }
-
-//     .input {
-
-//       &__name {
-//         width: 45%;
-//       }
-
-//       &__message {
-//         width: 75%;
-//         height: 15rem;
-//       }
-
-     
-//     }
-//   }
-  
-// }
 
 .footer {
   color: $color-text-light;

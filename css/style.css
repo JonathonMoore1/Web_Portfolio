@@ -188,6 +188,13 @@ body {
     .section-projects .project-card .btn {
       grid-row: 3 / 4;
       grid-column: 2 / 4; }
+  .section-projects .github-link {
+    color: #0a0a0a;
+    margin-top: 3rem; }
+    .section-projects .github-link a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: orangered; }
 
 .section-contact {
   color: #FFFFFF;
@@ -208,7 +215,7 @@ body {
       display: block; }
   .section-contact .contact__links {
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: center;
     justify-content: space-around; }
     .section-contact .contact__links--linkedin {
