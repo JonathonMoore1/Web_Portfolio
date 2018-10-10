@@ -27,6 +27,7 @@ body {
 }
 
 .container {
+    background-color: $color-background;
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: 100vh repeat(5, min-content);

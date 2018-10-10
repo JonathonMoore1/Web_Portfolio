@@ -20,6 +20,7 @@ body {
   grid-template-columns: 30rem auto; }
 
 .container {
+  background-color: #e6dada;
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 100vh repeat(5, min-content);
@@ -30,6 +31,7 @@ body {
   width: 30rem;
   background-color: #647C8D;
   background-image: linear-gradient(to top, rgba(0, 255, 200, 0.65), rgba(28, 0, 128, 0.65)), url(../img/IMG_2324.jpg);
+  background-size: cover;
   grid-column: 1 / 2; }
   .sidebar__content {
     position: fixed;
