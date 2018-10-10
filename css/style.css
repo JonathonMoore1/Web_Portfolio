@@ -30,7 +30,6 @@ body {
 .sidebar {
   height: 100%;
   width: 30rem;
-  background-color: #647C8D;
   background-image: linear-gradient(to top, rgba(0, 255, 200, 0.65), rgba(28, 0, 128, 0.65)), url(../img/IMG_2324.jpg);
   background-size: cover;
   grid-column: 1 / 2; }
@@ -113,12 +112,15 @@ body {
 
 .section-projects {
   color: #eee;
-  background-color: #FFFFFF;
+  background-color: #dff7f7;
   grid-column: full-start / full-end;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr repeat(2, minmax(min-content, 50rem)) 1fr;
   grid-template-rows: repeat(3, min-content); }
+  .section-projects__heading {
+    grid-column: 2 / auto;
+    margin-bottom: 2rem; }
   .section-projects .project-grid {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
@@ -129,7 +131,7 @@ body {
   .section-projects .project-card {
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-    background-color: #BAC3C9;
+    background-color: #6b8586;
     border-radius: 3px;
     box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2);
     overflow: hidden; }
@@ -141,7 +143,7 @@ body {
       grid-row: 5 / -1;
       display: grid;
       grid-template-rows: repeat(3, min-content) 2rem;
-      grid-template-columns: 1fr repeat(2, minmax(min-content, 10rem)) 1fr; }
+      grid-template-columns: 1fr minmax(min-content, 18rem) 1fr; }
     .section-projects .project-card__img {
       display: block;
       max-width: 100%;
@@ -150,11 +152,11 @@ body {
       opacity: .4; }
     .section-projects .project-card__title {
       justify-self: center;
-      padding: 1rem;
-      width: 80%;
+      width: 100%;
       grid-row: 1 / 2;
-      grid-column: 2 / 4;
-      background-color: orangered;
+      grid-column: 2 / 3;
+      background-color: #6b8586;
+      border: 1px solid #0a0a0a;
       text-align: center;
       font-size: 1.6rem;
       text-transform: uppercase;
@@ -163,15 +165,16 @@ body {
       border-radius: 3px; }
     .section-projects .project-card__tech {
       grid-column: 2 / 4;
-      grid-column: 2 / 3; }
+      grid-row: 2 / 3; }
     .section-projects .project-card__tech-list {
       display: block; }
     .section-projects .project-card .btn {
       grid-row: 3 / 4;
-      grid-column: 2 / 4; }
+      grid-column: 2 / 3;
+      width: 100%; }
   .section-projects .github-link {
     grid-row: 3;
-    grid-column: 1 / -1;
+    grid-column: 2 / auto;
     color: #0a0a0a;
     margin-top: 3rem; }
     .section-projects .github-link a {
@@ -181,7 +184,7 @@ body {
 
 .section-contact {
   color: #FFFFFF;
-  background-color: #BAC3C9;
+  background-color: #dff7f7;
   grid-column: section-start / section-end;
   padding: 3rem; }
   .section-contact .heading__secondary {
@@ -210,7 +213,7 @@ body {
 
 .footer {
   color: #eee;
-  background-color: #647C8D;
+  background-color: #dff7f7;
   grid-column: full-start / full-end; }
   .footer .copyright {
     color: #FFFFFF;
@@ -225,17 +228,15 @@ body {
   text-transform: uppercase; }
 
 .heading__secondary {
-  margin: 3rem 0;
-  color: orangered;
-  position: relative;
-  grid-column: 1 / -1; }
-  .heading__secondary--title {
-    display: block;
-    font-size: 3rem;
-    font-weight: 300;
-    text-transform: uppercase; }
+  color: #fc4b71;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase; }
   .heading__secondary--sub {
-    display: block; }
+    display: block;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #fc4b71; }
 
 .btn {
   width: 15rem;
@@ -250,7 +251,7 @@ body {
   border-bottom: 2px solid #FFFFFF;
   transition: all .2s; }
   .btn:hover {
-    background-color: #647C8D;
+    background-color: #dff7f7;
     color: #fc4b71;
     border-bottom: none;
     transform: translateY(-3px);
