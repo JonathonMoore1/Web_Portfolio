@@ -28,9 +28,13 @@ body {
 
 .container {
     background-color: $color-background-1;
+    background-image: linear-gradient(
+        rgba($color-background-1, .4),
+        rgba($color-background-1, .4)
+    ), url(../img/fresh_snow.png);
     padding: 0 1rem;
     grid-column: 2 / -1;
     display: grid;
-    grid-template-rows: 100vh repeat(5, min-content);
+    grid-template-rows: 100vh repeat(6, min-content);
     grid-template-columns: [full-start] 1fr [section-start] repeat(4, minmax(min-content, 30rem)) [section-end] 1fr [full-end];
 }

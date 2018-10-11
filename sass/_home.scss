@@ -139,6 +139,21 @@
   }
 }
 
+.section-skills {
+  grid-column: full-start / full-end;
+  height: 80vh;
+  background-image: url(../img/IMG_2368.resized.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0 85vh);
+
+  display: grid;
+
+  grid-template-rows: 1fr repeat(3, 30vh) 1fr;
+
+
+}
+
 .section-projects {
   color: $color-text-light;
   background-color: $color-background-2;
@@ -307,7 +322,7 @@
 
 .footer {
   color: $color-text-light;
-  background-color: $color-background-2;
+  background-color: $color-gunmetal;
 
   grid-column: full-start / full-end;
 
