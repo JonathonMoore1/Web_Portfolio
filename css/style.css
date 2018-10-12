@@ -20,9 +20,7 @@ body {
   grid-template-columns: 30rem auto; }
 
 .container {
-  background-color: #e6dada;
-  background-image: linear-gradient(rgba(230, 218, 218, 0.4), rgba(230, 218, 218, 0.4)), url(../img/fresh_snow.png);
-  padding: 0 1rem;
+  background-color: #FFFFFF;
   grid-column: 2 / -1;
   display: grid;
   grid-template-rows: 100vh repeat(6, min-content);
@@ -31,36 +29,36 @@ body {
 .sidebar {
   height: 100%;
   width: 30rem;
-  background-image: linear-gradient(to top, rgba(0, 255, 200, 0.65), rgba(28, 0, 128, 0.65)), url(../img/IMG_2324.jpg);
+  background-image: linear-gradient(to bottom, rgba(252, 75, 113, 0.65), rgba(252, 75, 113, 0.65)), url(../img/IMG_2324.jpg);
   background-size: cover;
   grid-column: 1 / 2; }
   .sidebar__content {
     position: fixed;
     width: 30rem;
-    color: #FFFFFF;
+    color: #1f1d1d;
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100%; }
     .sidebar__content .img-box {
       padding: 2rem 0;
-      border-bottom: 1px solid #FFFFFF; }
+      border-bottom: 1px solid #1f1d1d; }
       .sidebar__content .img-box__img {
         height: 15rem;
         width: 15rem;
         border-radius: 50%;
         opacity: .4;
-        border: 2px solid #FFFFFF; }
+        border: 1px solid #1f1d1d; }
       .sidebar__content .img-box span {
         display: block; }
       .sidebar__content .img-box__name {
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 2rem;
-        letter-spacing: 1.2rem; }
+        letter-spacing: 1rem; }
       .sidebar__content .img-box__sub {
         text-transform: uppercase;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1.5rem; }
     .sidebar__content .navigation {
       padding: 2rem 0;
@@ -72,19 +70,22 @@ body {
         display: flex;
         flex-direction: column; }
       .sidebar__content .navigation__item {
-        border-bottom: 0.7px solid #FFFFFF;
-        font-weight: 100;
+        border-bottom: 1px solid #1f1d1d;
+        font-weight: 300;
         margin-top: 2rem; }
       .sidebar__content .navigation__link,
       .sidebar__content .navigation :visited {
-        color: #eee;
+        color: #1f1d1d;
         text-transform: uppercase;
         text-decoration: none; }
 
 .header {
-  color: #0a0a0a;
+  color: #FFFFFF;
   padding: 2rem;
-  grid-column: section-start / section-end;
+  background-image: linear-gradient(to right bottom, rgba(107, 133, 134, 0.8), rgba(0, 0, 0, 0.8)), url(../img/IMG_2324.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: full-start / full-end;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: 1fr minmax(20rem, 100rem) 1fr; }
@@ -97,15 +98,16 @@ body {
     .header__heading::after {
       content: "";
       display: block;
-      width: 45%;
+      width: 60%;
       height: 3px;
       background-color: #fc4b71;
-      transform: translateX(6rem); }
+      transform: translateX(10rem); }
   .header__statement {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    font-size: 2rem;
-    font-weight: 300; }
+    font-size: 3rem;
+    font-weight: 300;
+    align-self: center; }
   .header__btn {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -114,15 +116,12 @@ body {
 .section-skills {
   grid-column: full-start / full-end;
   height: 80vh;
-  background-image: url(../img/IMG_2368.resized.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-rows: 1fr repeat(3, 30vh) 1fr; }
 
 .section-projects {
   color: #eee;
-  background-color: #8a8a8a;
+  background-color: #eeeeee;
   grid-column: full-start / full-end;
   padding: 4rem 2rem;
   display: grid;
@@ -203,21 +202,8 @@ body {
 
 .section-contact {
   color: #FFFFFF;
-  background-color: #8a8a8a;
   grid-column: section-start / section-end;
   padding: 3rem; }
-  .section-contact .heading__secondary {
-    margin: 3rem 0;
-    color: orangered;
-    position: relative;
-    grid-column: 1 / -1; }
-    .section-contact .heading__secondary--title {
-      display: block;
-      font-size: 3rem;
-      font-weight: 300;
-      text-transform: uppercase; }
-    .section-contact .heading__secondary--sub {
-      display: block; }
   .section-contact .contact__links {
     display: flex;
     width: 50%;
@@ -242,20 +228,27 @@ body {
     padding: 4rem 0; }
 
 .heading__primary {
-  font-size: 3.5rem;
+  font-size: 7rem;
   font-weight: 500;
   text-transform: uppercase; }
 
 .heading__secondary {
-  color: #FFFFFF;
+  color: #1f1d1d;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase; }
   .heading__secondary--sub {
     display: block;
     font-weight: 300;
     font-size: 1.5rem;
     color: #0a0a0a; }
+  .heading__secondary--title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .heading__secondary--sub {
+    display: block; }
 
 .btn {
   width: 15rem;

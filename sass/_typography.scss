@@ -1,19 +1,19 @@
 .heading {
 
   &__primary {
-    font-size: 3.5rem;
+    font-size: 7rem;
     font-weight: 500;
     text-transform: uppercase;
   }
   
   &__secondary {
     // margin: 3rem 0;
-    color: $color-white;
+    color: $color-text-dark;
     // position: relative;
     // grid-column: 1 / -1;
     // display: inline-block
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     text-transform: uppercase;
 
     &--sub {
@@ -21,6 +21,16 @@
       font-weight: 300;
       font-size: 1.5rem;
       color: $color-black;
+    }
+    &--title {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    &--sub {
+      display: block;
     }
   }
 }
