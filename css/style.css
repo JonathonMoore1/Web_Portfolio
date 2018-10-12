@@ -29,36 +29,36 @@ body {
 .sidebar {
   height: 100%;
   width: 30rem;
-  background-image: linear-gradient(to bottom, rgba(0, 132, 255, 0.65), rgba(0, 22, 219, 0.65)), url(../img/IMG_2324.jpg);
+  background-image: linear-gradient(to bottom, rgba(252, 75, 113, 0.65), rgba(252, 75, 113, 0.65)), url(../img/IMG_2324.jpg);
   background-size: cover;
   grid-column: 1 / 2; }
   .sidebar__content {
     position: fixed;
     width: 30rem;
-    color: #FFFFFF;
+    color: #1f1d1d;
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100%; }
     .sidebar__content .img-box {
       padding: 2rem 0;
-      border-bottom: 1px solid #FFFFFF; }
+      border-bottom: 1px solid #1f1d1d; }
       .sidebar__content .img-box__img {
         height: 15rem;
         width: 15rem;
         border-radius: 50%;
         opacity: .4;
-        border: 2px solid #FFFFFF; }
+        border: 1px solid #1f1d1d; }
       .sidebar__content .img-box span {
         display: block; }
       .sidebar__content .img-box__name {
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 2rem;
-        letter-spacing: 1.2rem; }
+        letter-spacing: 1rem; }
       .sidebar__content .img-box__sub {
         text-transform: uppercase;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1.5rem; }
     .sidebar__content .navigation {
       padding: 2rem 0;
@@ -70,12 +70,12 @@ body {
         display: flex;
         flex-direction: column; }
       .sidebar__content .navigation__item {
-        border-bottom: 0.7px solid #FFFFFF;
-        font-weight: 100;
+        border-bottom: 1px solid #1f1d1d;
+        font-weight: 300;
         margin-top: 2rem; }
       .sidebar__content .navigation__link,
       .sidebar__content .navigation :visited {
-        color: #eee;
+        color: #1f1d1d;
         text-transform: uppercase;
         text-decoration: none; }
 
@@ -202,21 +202,8 @@ body {
 
 .section-contact {
   color: #FFFFFF;
-  background-color: #eeeeee;
   grid-column: section-start / section-end;
   padding: 3rem; }
-  .section-contact .heading__secondary {
-    margin: 3rem 0;
-    color: orangered;
-    position: relative;
-    grid-column: 1 / -1; }
-    .section-contact .heading__secondary--title {
-      display: block;
-      font-size: 3rem;
-      font-weight: 300;
-      text-transform: uppercase; }
-    .section-contact .heading__secondary--sub {
-      display: block; }
   .section-contact .contact__links {
     display: flex;
     width: 50%;
@@ -246,15 +233,22 @@ body {
   text-transform: uppercase; }
 
 .heading__secondary {
-  color: #FFFFFF;
+  color: #1f1d1d;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase; }
   .heading__secondary--sub {
     display: block;
     font-weight: 300;
     font-size: 1.5rem;
     color: #0a0a0a; }
+  .heading__secondary--title {
+    display: block;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .heading__secondary--sub {
+    display: block; }
 
 .btn {
   width: 15rem;

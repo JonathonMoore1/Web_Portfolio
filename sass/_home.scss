@@ -8,8 +8,8 @@
   // background-color: $color-winter-strong;
   background-image: linear-gradient(
     to bottom, 
-    rgba(rgb(0, 132, 255), .65),
-    rgba(rgb(0, 22, 219), .65)
+    rgba($color-accent, .65),
+    rgba($color-accent, .65)
     
   ), url(../img/IMG_2324.jpg);
   background-size: cover;
@@ -20,7 +20,7 @@
   &__content {
     position: fixed;
     width: 30rem;
-    color: $color-white;
+    color: $color-text-dark;
   
     text-align: center;
   
@@ -31,7 +31,7 @@
 
     .img-box {
       padding: 2rem 0;
-      border-bottom: 1px solid $color-white;
+      border-bottom: 1px solid $color-text-dark;
       // width: 100%;
   
       &__img {
@@ -39,7 +39,7 @@
         width: 15rem;
         border-radius: 50%;
         opacity: .4;
-        border: 2px solid $color-white;
+        border: 1px solid $color-text-dark;
       }
   
       span {
@@ -48,14 +48,14 @@
   
       &__name {
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 2rem;
-        letter-spacing: 1.2rem;
+        letter-spacing: 1rem;
       }
   
       &__sub {
         text-transform: uppercase;
-        font-weight: 100;
+        font-weight: 300;
         font-size: 1.5rem;
       }
     }
@@ -64,7 +64,7 @@
       padding: 2rem 0;
       display: flex;
       flex-direction: column;
-      // justify-content: center;
+      // align-items: flex-start;
       // align-items: stretch;
       // width: 100%;
   
@@ -73,17 +73,18 @@
         padding: 2rem;
         display: flex;
         flex-direction: column;
+
       }
   
       &__item {
-        border-bottom: .7px solid $color-white;
-        font-weight: 100;
+        border-bottom: 1px solid $color-text-dark;
+        font-weight: 300;
         margin-top: 2rem;
       }
   
       &__link,
       :visited {
-        color: $color-text-light;
+        color: $color-text-dark;
         text-transform: uppercase;
         text-decoration: none;
   
@@ -283,29 +284,10 @@
 
 .section-contact {
   color: $color-white;
-  background-color: $color-background-2;
+  // background-color: $color-background-2;
 
   grid-column: section-start / section-end;
   padding: 3rem;
-
-  .heading__secondary {
-    margin: 3rem 0;
-    color: orangered;
-    position: relative;
-    grid-column: 1 / -1;
-    // display: inline-block
-
-    &--title {
-      display: block;
-      font-size: 3rem;
-      font-weight: 300;
-      text-transform: uppercase;
-    }
-
-    &--sub {
-      display: block;
-    }
-  }
 
   .contact__links {
 
