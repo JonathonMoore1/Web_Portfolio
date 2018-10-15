@@ -227,12 +227,20 @@ body {
 .section-contact {
   color: #FFFFFF;
   grid-column: section-start / section-end;
-  padding: 3rem; }
+  padding: 3rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr repeat(2, minmax(min-content, 50rem)) 1fr; }
+  .section-contact__heading {
+    grid-row: 1 / 2;
+    grid-column: 2 / span 2;
+    justify-self: flex-start; }
   .section-contact .contact__links {
+    grid-row: 2 / 3;
+    grid-column: 2 / span 2;
     display: flex;
-    width: 50%;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-between; }
     .section-contact .contact__links--linkedin {
       height: 10rem;
       width: 10rem; }
