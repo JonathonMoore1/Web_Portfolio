@@ -77,7 +77,8 @@ body {
       .sidebar__content .navigation :visited {
         color: #1f1d1d;
         text-transform: uppercase;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .2s; }
         .sidebar__content .navigation__link:hover,
         .sidebar__content .navigation :visited:hover {
           color: #FFFFFF; }
@@ -114,7 +115,8 @@ body {
   .header__btn {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    justify-self: center; }
+    justify-self: center;
+    color: #fc4b71; }
 
 .section-skills {
   grid-column: full-start / full-end;
@@ -136,6 +138,11 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row; }
+    .section-skills .tech-icons .icon-list__item {
+      transition: all .2s;
+      cursor: pointer; }
+      .section-skills .tech-icons .icon-list__item:hover {
+        transform: translateY(-1.5rem) scale(1.2, 1.2); }
     .section-skills .tech-icons .icon-list--use {
       justify-content: space-between; }
     .section-skills .tech-icons .icon-list--learning {
@@ -244,12 +251,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .section-contact .contact__links .link {
+      transition: all .2s; }
+      .section-contact .contact__links .link:hover {
+        transform: translateY(-1rem) scale(1.2, 1.2);
+        border: 1px solid #fc4b71;
+        border-radius: 3px;
+        background-color: #fc4b71; }
+    .section-contact .contact__links--mail {
+      padding: 1rem; }
     .section-contact .contact__links--linkedin {
-      height: 10rem;
-      width: 10rem; }
+      padding: 1rem; }
     .section-contact .contact__links--github {
-      height: 10rem;
-      width: 10rem; }
+      padding: 1rem; }
 
 .footer {
   color: #eee;
@@ -294,14 +308,14 @@ body {
 .btn {
   width: 15rem;
   height: 5rem;
-  color: #6b8586;
+  color: #FFFFFF;
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   padding: none;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #6b8586;
+  border-bottom: 2px solid #fc4b71;
   transition: all .2s; }
   .btn:hover {
     background-color: #fc4b71;

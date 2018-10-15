@@ -81,6 +81,7 @@
         color: $color-text-dark;
         text-transform: uppercase;
         text-decoration: none;
+        transition: all .2s;
   
         &:hover {
           color: $color-white;
@@ -88,9 +89,6 @@
       }
     }
   }
-  
-
-
 }
 
 .header {
@@ -147,6 +145,7 @@
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     justify-self: center;
+    color: $color-accent;
   }
 }
 
@@ -184,7 +183,16 @@
       list-style: none;
       display: flex;
       flex-direction: row;
-      
+      // transition: all .2s;
+
+      &__item {
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-1.5rem) scale(1.2, 1.2);
+        }
+      }
 
       &--use {
         justify-content: space-between;
@@ -347,19 +355,33 @@
     // width: 50%;
     align-items: center;
     justify-content: space-between;
+    
+    
+    .link {
+      transition: all .2s;
+      &:hover {
+        transform: translateY(-1rem) scale(1.2, 1.2);
+        border: 1px solid $color-accent;
+        border-radius: 3px;
+        background-color: $color-accent;
+      }
+    }
+    
 
-    &--email {
-
+    &--mail {
+      padding: 1rem;
     }
 
     &--linkedin {
-      height: 10rem;
-      width: 10rem;
+      // height: 10rem;
+      // width: 10rem;
+      padding: 1rem;
     }
 
     &--github {
-      height: 10rem;
-      width: 10rem;
+      // height: 10rem;
+      // width: 10rem;
+      padding: 1rem;
     }
   }
 }
