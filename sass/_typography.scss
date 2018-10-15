@@ -33,6 +33,13 @@
       display: block;
     }
   }
+
+  &__tertiary {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-accent;
+  }
 }
 
 .btn {

@@ -123,12 +123,20 @@ body {
     grid-column: 2 / span 2;
     justify-self: center;
     align-self: center; }
-  .section-skills .tech-icons {
+  .section-skills .tech-icons--use {
+    grid-row: 2 / 3;
     grid-column: 2 / span 2; }
-    .section-skills .tech-icons--use {
-      grid-row: 2 / 3; }
-    .section-skills .tech-icons--learning {
-      grid-row: 4 / 5; }
+  .section-skills .tech-icons--learning {
+    grid-row: 4 / 5;
+    grid-column: 2 / span 2; }
+  .section-skills .tech-icons .icon-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row; }
+    .section-skills .tech-icons .icon-list--use {
+      justify-content: space-between; }
+    .section-skills .tech-icons .icon-list--learning {
+      justify-content: space-around; }
   .section-skills .learning {
     grid-column: 2 / span 2;
     grid-row: 3 / 4;
@@ -265,6 +273,12 @@ body {
     text-transform: uppercase; }
   .heading__secondary--sub {
     display: block; }
+
+.heading__tertiary {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fc4b71; }
 
 .btn {
   width: 15rem;
