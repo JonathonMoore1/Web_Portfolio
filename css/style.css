@@ -78,6 +78,9 @@ body {
         color: #1f1d1d;
         text-transform: uppercase;
         text-decoration: none; }
+        .sidebar__content .navigation__link:hover,
+        .sidebar__content .navigation :visited:hover {
+          color: #FFFFFF; }
 
 .header {
   color: #FFFFFF;
@@ -98,10 +101,10 @@ body {
     .header__heading::after {
       content: "";
       display: block;
-      width: 60%;
+      width: 45%;
       height: 3px;
       background-color: #fc4b71;
-      transform: translateX(10rem); }
+      transform: translateX(9.5rem); }
   .header__statement {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
