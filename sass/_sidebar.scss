@@ -1,0 +1,109 @@
+.sidebar {
+  height: 100%;
+  width: 30rem;
+  background-image: linear-gradient(
+    to bottom, 
+    rgba($color-accent, .65),
+    rgba($color-accent, .65)
+    
+  ), url(../img/IMG_2324.jpg);
+  background-size: cover;
+
+  grid-column: 1 / 2;
+
+  &__content {
+    position: fixed;
+    width: 30rem;
+    color: $color-text-dark;
+  
+    text-align: center;
+  
+    display: flex;
+    flex-direction: column;
+    // position: fixed;
+    height: 100%;
+    @media only screen and (max-width: $bp-largest) {
+      // grid-column: 1 / -1;
+      // grid-template-rows: repeat(1, min-content);
+      // // grid-template-columns:
+      flex-direction: row;
+    }
+
+    .img-box {
+      padding: 2rem 0;
+      border-bottom: 1px solid $color-text-dark;
+      // width: 100%;
+  
+      &__img {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        opacity: .4;
+        border: 1px solid $color-text-dark;
+        @media only screen and (max-width: $bp-largest) {
+          width: 7.5rem;
+          height: 7.5rem;
+        }   
+      }
+  
+      span {
+        display: block;
+      }
+  
+      &__name {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 2rem;
+        letter-spacing: 1rem;
+      }
+  
+      &__sub {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+    }
+  
+    .navigation {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: $bp-largest) {
+        flex-direction: row;
+      }   
+  
+      &__list {
+        list-style: none;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: $bp-largest) {
+          flex-direction: row;
+        }   
+      }
+  
+      &__item {
+        border-bottom: 1px solid $color-text-dark;
+        font-weight: 300;
+        margin-top: 2rem;
+      }
+  
+      &__link,
+      :visited {
+        color: $color-text-dark;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .2s;
+  
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    grid-row: 1 / span 1;
+  }
+}

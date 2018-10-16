@@ -1,3 +1,10 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;    // 1200px
+$bp-large: 62.5em;    // 1000px
+$bp-medium: 50em;     // 1500px
+$bp-small: 37.5em;    // 600px
+
+
 *,
 *::after,
 *::before {
@@ -24,6 +31,11 @@ body {
 
     display: grid;
     grid-template-columns: 30rem auto;
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-rows: repeat(7, min-content);
+        grid-template-columns: none;
+    }
 }
 
 .container {
@@ -37,4 +49,13 @@ body {
     display: grid;
     grid-template-rows: 100vh repeat(6, min-content);
     grid-template-columns: [full-start] 1fr [section-start] repeat(4, minmax(min-content, 30rem)) [section-end] 1fr [full-end];
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, min-content);
+        // grid-template-columns: 
+    }
 }
+
+// MEDIA QUERIES
+
